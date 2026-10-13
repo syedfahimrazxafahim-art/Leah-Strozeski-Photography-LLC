@@ -1,0 +1,6 @@
+{
+  "name": "Leah Strozeski Photography LLC",
+  "description": "Editorial, cinematic, and timeless photography based in New York. Every frame holds a feeling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

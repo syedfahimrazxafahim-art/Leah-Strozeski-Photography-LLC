@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #050505;
+    color: #F5F5F5;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+/* Generate button sheen keyframes */
+@keyframes sheen-slide {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+.animate-sheen {
+  animation: sheen-slide 3.5s infinite ease-in-out;
+}
+
